@@ -2,81 +2,176 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
-*{
-	margin:0px;
-	padding:0px;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+.nav {
+	padding: 2vh 2vw !important;
+  }
+  
+.navbar{
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	
 }
-nav{
-	width: 100%;
-	height: 75px;
-	background-color: #e04141ea;
-	line-height: 75px;
-	padding:0px 100px;
-	position:fixed;
-	z-index: 1;
-}
-nav .logo{
-	font-size: 30px;
-	font-weight: bold;
-	letter-spacing: 1.5px; 
-}
-nav .logo p{
-	float: left;
-	color:#fff;
-	text-transform: uppercase;
-}
-nav ul{
-	float: right;
-}
-nav ul li{
-	display: inline-block;
-	list-style: none;
-    
-}
-nav ul li a{
-	color:#fff;
+
+  .logo{
+	  height: 50px;
+	  width: 50px;
+	  margin-top: -2px;
+	  margin-left: 7px;
+  }
+
+  .logo-name{
+	  margin-top: 10px;
+	  font-family: Poppins;
+	  font-size: 1.5rem !important;
+	  font-weight: 900 !important;	
+  }
+  .logo-O{
+	  color: #ed3b3bed;
+  }
+  .join-now-btn{
 	text-decoration: none;
-	font-size: 18px;
-	text-transform: uppercase;
-	padding:0px 32px;
-}
-nav ul li a:hover{
-	color:#000000;
-}
-.login{
-    color: yellow;
+	padding: 7px 14px;
+	border-radius: 5px;
+	border: 2px solid #ed3b3bed;
+	color: #ed3b3bed;
+	margin-right: 15px;
+  }
+  
+  .join-now-btn:hover{
+	background-color: #e41515ed;
+	border: 2px solid #e41515ed;
+	color: white;
+	transition: 0.4s;
+	text-decoration: none;
+  }
+  
+  .login-btn{
+	  margin-right: 14px;
+	  margin-left: 0px !important;
+	  background-color: #ed3b3bed !important;
+	  color: white !important;
+	  border:2px solid #ed3b3bed !important;
+  }
+  
+  .login-btn:hover{
+	  background-color: #e41515ed !important;
+  }
+
+  /* body part  */
+  
+.home {
+    background: url(https://www.insidehighered.com/sites/default/server_files/media/iStock-165809913.jpg) no-repeat top center;
+    background-size: cover;
+    position: relative;
+    padding-top: 300px;
+    width: 100%;
 }
 
-.image img{
-	width: 100%;
-	height: 0px auto;
-	opacity: 0.80;
+.fix {
+    overflow: hidden;
 }
 
-main{
-    background-color: white;
-    text-align: center;
+.overlay {
+    background-color: rgb(41 39 34 / 70%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-top: -153px !important; */
+
+}
+
+.cont1{
+    margin-top: -153px !important;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.main_home:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 140px solid #f5f5f5;
+    border-right: 690px solid transparent;
+}
+
+.think-pic{
+    display: flex;
+	justify-content: space-between;
 	
 }
-.jumbotron{
-	background-color: rgb(241, 219, 219);
-	margin-bottom: 2rem;
-	height: 800px;
-	
+.think-pic img{
+	width: 50%;
 }
-.jumbo2{
-	background-color: rgb(241, 219, 219);
-	height: 400px;
-	margin-bottom: 2rem;
+.main_home:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 140px solid #f5f5f5;
+    border-left: 690px solid transparent;
 }
 
+img {
+    max-width: 100%;
+}
 
+.slid_item{
+    display: flex;
+}
 
+.help1{
+    color: #ee4949;
+    border: 1px white;
+}
+.btn1{
+    line-height: 75px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: #ee4949;
+    padding: 15px 80px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
 
-section:nth-child(even) {
-    background-color: rgb(241, 241, 241);
+.btn1:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #e41515ed;
+    transition: 0.5s;
+}
+
+.t1{
+	text-align: center;
+	justify-content: center;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 700;
+	font-size: 2.7rem;
+}
+
+.t1 span{
+	color: #ee4949;
+	font-family: 'Rubik Wet Paint', cursive;
 }
 
 
